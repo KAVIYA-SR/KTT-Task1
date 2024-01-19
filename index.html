@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="gradschool.css">
     <title>GradSchool</title>
 </head>
@@ -15,7 +16,7 @@
                 <li><a href="#home">HOME</a></li>
                 <li class="has-submenu"><a href="#about"> ABOUT Us <i class="fa-solid fa-caret-up fa-rotate-180"></i></a>
                     <ul class="sub-menu">
-                        <li class="active"><a href="#about">who we are?</a></li>
+                        <li><a href="#about">who we are?</a></li>
                         <li><a href="#wedo">what we do?</a></li>
                         <li><a href="#how">how it works?</a></li>
                         <li><a href="https://templatemo.com/about">External url</a></li>
@@ -39,8 +40,62 @@
             </div>
         </div>
     </section>
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="post">
+                        <div class="feature-content">
+                            <div class="show">
+                                <h4>
+                                    <i class="fa-solid fa-pencil"></i>
+                                    All courses
+                                </h4>
+                            </div>
+                            <div class="hide-content">
+                                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+                                <a href="#about">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="post">
+                        <div class="feature-content">
+                            <div class="show">
+                                <h4>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    VIRTUAL CLASS
+                                </h4>
+                            </div>
+                            <div class="hide-content">
+                                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+                                <a href="#wedo">details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="post">
+                        <div class="feature-content">
+                            <div class="show">
+                                <h4>
+                                   <i class="fa-solid fa-book fa-rotate-by" style="--fa-rotate-angle: 10deg;"></i>
+                                    real meeting
+                                </h4>
+                            </div>
+                            <div class="hide-content">
+                                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+                                <a href="#about">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="about">
-        <div class="data">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading">
@@ -50,14 +105,14 @@
                 <div class="col-md-12">
                     <div id="tabs">
                         <ul class="about-ul">
-                            <li id="1st"><a href="#tab1">best education<br><i class="fa-solid fa-square"></i></a></li>
-                            <li id="2nd"><a href="#tab2">top management<br><i class="fa-solid fa-square"></i></a></li>
-                            <li id="3rd"><a href="#tab3">quality meeting<br><i class="fa-solid fa-square"></i></a></li>
+                            <li id="education"><a href="#about">best education<br><i class="fa-solid fa-square"></i></a></li>
+                            <li id="management"><a href="#about">top management<br><i class="fa-solid fa-square"></i></a></li>
+                            <li id="meeting"><a href="#about">quality meeting<br><i class="fa-solid fa-square"></i></a></li>
                         </ul>
                     </div>
                     <div class="contents">
                         <div id="tab1">
-                            <div class="row1">
+                            <div class="row">
                                 <div class="col-md-6"><img src="tab1.png" alt=""></div>
                                 <div class="col-md-6">
                                     <h4>Best Education</h4>
@@ -65,20 +120,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="tab2">
-                            <div class="row1">
+                        <div id="tab2" >
+                            <div class="row">
                                 <div class="col-md-6"><img src="tab2.png" alt=""></div>
                                 <div class="col-md-6">
-                                    <h4>Best Education</h4>
+                                    <h4>Top management</h4>
                                     <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make a little donation to TemplateMo. Please tell your friends about us. Thank you.</p>
                                 </div>
                             </div>
                         </div>
-                        <div id="tab3">
-                            <div class="row1">
+                        <div id="tab3" >
+                            <div class="row">
                                 <div class="col-md-6"><img src="tab3.png" alt=""></div>
                                 <div class="col-md-6">
-                                    <h4>Best Education</h4>
+                                    <h4>quality meeting</h4>
                                     <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make a little donation to TemplateMo. Please tell your friends about us. Thank you.</p>
                                 </div>
                             </div>
@@ -88,7 +143,70 @@
             </div>
         </div>
     </section>
-    <!-- <script src="gradschool.js"></script> -->
+    <section id="wedo" class="coming-soon">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-xs-12">
+                    <div class="centerIt">
+                        <h4>Take <span>any online course </span>and win $326 for your next class</h4>
+                        <div class="counter">
+                            <div class="days">
+                                <div class="value" id="day"></div>
+                                <span>days</span>
+                            </div>
+                            <div class="hours">
+                                <div class="value" id="hour"></div>
+                                <span>hours</span>
+                            </div>
+                            <div class="minutes">
+                                <div class="value" id="minute"></div>
+                                <span>minutes</span>
+                            </div>
+                            <div class="seconds">
+                                <div class="value" id="second"></div>
+                                <span>seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="right-content">
+                        <div class="top-content">
+                            <h6>Register your free account and get immediate access to online courses</h6>
+                        </div>
+                        <form id="form" action="#" method="get">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" id="number" placeholder="Your Phone Number" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit">get it now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="courses">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Choose Your Course</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="gradschool.js"></script>
 </body>
 
 </html>
