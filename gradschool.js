@@ -12,11 +12,11 @@ function countdown() {
 
     const interval=setInterval(()=>{
         const countdownDate = new Date('1/1/2025').getTime();
-        console.log(countdownDate);
+        // console.log(countdownDate);
         const now=new Date().getTime();
-        console.log(now)
+        // console.log(now)
         const distance =countdownDate-now;
-        console.log(distance)
+        // console.log(distance)
 
         days.innerText=formate(Math.floor((distance/day)));
         hours.innerText=formate(Math.floor((distance%day)/hour));
@@ -33,3 +33,47 @@ function formate(num){
     }
     return num;
 }
+
+const tab1=document.getElementById('education');
+const tab2=document.getElementById('management');
+const tab3=document.getElementById('meeting');
+const content1 =document.getElementById('content1');
+const content2 =document.getElementById('content2');
+const content3 =document.getElementById('content3');
+const sq1=document.getElementById('square1');
+const sq2=document.getElementById('square2');
+const sq3=document.getElementById('square3');
+
+tab1.addEventListener('click',()=>{
+    content2.style.display='none';
+    content3.style.display='none';
+    content1.style.display='block';
+    sq1.classList.add("active");
+    sq2.classList.remove("active");
+    sq3.classList.remove("active");
+    tab1.style.color='#f5a425';
+    tab2.style.color = "#fff";
+    tab3.style.color = "#fff";
+})
+tab2.addEventListener('click',()=>{
+    content1.style.display='none';
+    content3.style.display='none';
+    content2.style.display='block';
+    sq2.classList.add('active');
+    sq1.classList.remove('active');
+    sq3.classList.remove('active');
+    tab2.style.color='#f5a425';
+    tab1.style.color='#fff';
+    tab3.style.color = "#fff";
+})
+tab3.addEventListener('click',()=>{
+    content1.style.display='none';
+    content2.style.display='none';
+    content3.style.display='block';
+    sq3.classList.add("active");
+    sq1.classList.remove("active");
+    sq2.classList.remove("active");
+    tab3.style.color='#f5a425';
+    tab1.style.color = "#fff";
+    tab2.style.color = "#fff";
+})
