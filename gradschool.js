@@ -48,10 +48,8 @@ tab1.addEventListener('click',()=>{
     content2.style.display='none';
     content3.style.display='none';
     content1.style.display='block';
-    sq1.classList.add("active");
-    sq2.classList.remove("active");
-    sq3.classList.remove("active");
-    tab1.style.color='#f5a425';
+   sq1.style.color='green'
+    tab1.style.color='green';
     tab2.style.color = "#fff";
     tab3.style.color = "#fff";
 })
@@ -59,10 +57,8 @@ tab2.addEventListener('click',()=>{
     content1.style.display='none';
     content3.style.display='none';
     content2.style.display='block';
-    sq2.classList.add('active');
-    sq1.classList.remove('active');
-    sq3.classList.remove('active');
-    tab2.style.color='#f5a425';
+    sq2.style.color='red';
+    tab2.style.color='red';
     tab1.style.color='#fff';
     tab3.style.color = "#fff";
 })
@@ -70,10 +66,8 @@ tab3.addEventListener('click',()=>{
     content1.style.display='none';
     content2.style.display='none';
     content3.style.display='block';
-    sq3.classList.add("active");
-    sq1.classList.remove("active");
-    sq2.classList.remove("active");
-    tab3.style.color='#f5a425';
+    sq3.style.color='blue';
+    tab3.style.color='blue';
     tab1.style.color = "#fff";
     tab2.style.color = "#fff";
 })
